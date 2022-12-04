@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="uq_logo_icon" type="drawable">@drawable/spotii_uqudo_logo</item>
+</resources>
