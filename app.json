@@ -1,33 +1,79 @@
 {
   "expo": {
-    "name": "consumer-mobile",
+    "scheme": "https",
+    "name": "Spotii",
     "slug": "consumer-mobile",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+    "owner": "hammeramr",
+    "ios": {
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "appStoreUrl": "https://apps.apple.com/us/app/spotii/id1536574288",
+      "bundleIdentifier": "com.spotiidmcc.spotii",
+      "buildNumber": "0.3.24.7",
+      "supportsTablet": false,
+      "infoPlist": {
+        "CFBundleAllowMixedLocalizations": true,
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photos or camera in order for you to upload images, such as your profile image or avatar.",
+        "NSCameraUsageDescription": "This app needs access to your camera in order for you to scan the merchant's QR code for in-store checkout.",
+        "NFCReaderUsageDescription": "This app needs access to your NFC reader in order to scan your national Id."
+      },
+      "associatedDomains": [
+        "applinks:dev.spotii.me"
+      ]
     },
+    "plugins": [
+      [
+        "expo-document-picker",
+        {
+          "appleTeamId": "YOUR_TEAM_ID"
+        }
+      ]
+    ],
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi": true,
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.spotiidmcc.spotii",
+      "package": "com.spotiidmcc.spotii",
+      "versionCode": 116,
+      "permissions": [
+        "CAMERA",
+        "INTERNET",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "https",
+              "host": "*.spotii.me",
+              "pathPrefix": "/checkout"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ]
+    },
+    "version": "0.3.24",
+    "orientation": "portrait",
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/2616364b-5173-4bd5-a4a3-cc1dc3ff922b"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+    "web": {
+      "config": {
+        "firebase": {
+          "apiKey": "AIzaSyAacuYLm01FH84eSDS3_RufxdjgeW4SGaA",
+          "measurementId": "G-ZX0JBCWK4H"
+        }
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "runtimeVersion": "3.24.7"
   }
 }

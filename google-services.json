@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "842298899972",
+    "project_id": "spotii-mobile",
+    "storage_bucket": "spotii-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842298899972:android:65ffae7d8d89cc450d7f51",
+        "android_client_info": {
+          "package_name": "com.spotiidmcc.spotii"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842298899972-e4kmvch2v9dttcrnoih29qbuku278m0t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJehIfjXCJVBk5fKyo6ohUm034PLFA3R0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842298899972-e4kmvch2v9dttcrnoih29qbuku278m0t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

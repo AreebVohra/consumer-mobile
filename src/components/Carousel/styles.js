@@ -1,0 +1,126 @@
+import { StyleSheet } from 'react-native';
+
+const styles = StyleSheet.create({
+  banner: {
+    height: 150,
+    backgroundColor: '#FFFFFF',
+    marginTop: '2%',
+    marginLeft: '5%',
+    position: 'relative',
+    zIndex: 100,
+    borderRadius: 8,
+  },
+  regularCarouselTile: {
+    backgroundColor: '#EDE6FF',
+    justifyContent: 'space-between',
+    width: '100%',
+    height: '100%',
+    borderRadius: 8,
+  },
+  merchantInfo: {
+    position: 'relative',
+    width: '40%',
+  },
+  merchantLogo: {
+    position: 'absolute',
+    backgroundColor: 'white',
+    width: 64,
+    height: 36,
+    padding: '4%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderBottomLeftRadius: 8,
+    borderBottomRightRadius: 8,
+  },
+  merchantOfferText: {
+    position: 'absolute',
+    bottom: 15,
+  },
+  carouselText: {
+    fontSize: 12,
+    fontWeight: '300',
+    color: '#1A0826',
+    lineHeight: 15,
+  },
+  carouselOffer: {
+    fontSize: 24,
+    fontWeight: '400',
+    color: '#1A0826',
+    lineHeight: 30,
+  },
+  merchantDisplayPic: {
+    width: '50%',
+    height: '100%',
+    backgroundColor: '#f3f5f7',
+  },
+  merchantDiscountTile: {
+    width: '100%',
+    height: '100%',
+  },
+  merchantDiscountPic: {
+    width: '100%',
+    height: '50%',
+  },
+  shopButton: {
+    paddingVertical: 13,
+    paddingHorizontal: 20,
+    borderRadius: 8,
+    marginHorizontal: '4%',
+    marginTop: '6%',
+  },
+  merchantTile: {
+    flex: 1,
+  },
+  merchantDiscountText: {
+    marginHorizontal: '4%',
+    marginTop: '8%',
+    flex: 1,
+    // borderTopLeftRadius: 16,
+    // borderTopRightRadius: 16,
+    // borderWidth: 1,
+    // borderColor: '#CCC',
+  },
+  merchantDiscountLogo: {
+    position: 'absolute',
+    bottom: '8%',
+    left: '4%',
+    backgroundColor: 'white',
+    padding: '4%',
+    width: 100,
+    height: 40,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 8,
+  },
+  merchantDiscountPercentage: {
+    fontSize: 35,
+    color: '#411361',
+    fontWeight: '400',
+  },
+  merchantDiscountDesc: {
+    fontSize: 16,
+    color: '#353535',
+    fontWeight: '300',
+    marginVertical: '2%',
+  },
+  termsAndConditionsEn: {
+    fontSize: 12,
+    color: '#717171',
+    fontWeight: '300',
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    marginBottom: '10%',
+  },
+  termsAndConditionsAr: {
+    fontSize: 12,
+    color: '#717171',
+    fontWeight: '300',
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
+    marginBottom: '10%',
+  },
+});
+
+export default styles;

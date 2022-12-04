@@ -1,0 +1,4 @@
+ios/uqudosdk.xcframework/** filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.nib filter=lfs diff=lfs merge=lfs -text
+ios/UqudoSDK.framework/** filter=lfs diff=lfs merge=lfs -text
