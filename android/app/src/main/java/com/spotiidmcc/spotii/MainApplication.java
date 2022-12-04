@@ -2,6 +2,8 @@ package com.spotiidmcc.spotii;
 
 import android.app.Application;
 import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.res.Configuration;
 import androidx.annotation.NonNull;
 
@@ -20,7 +22,15 @@ import expo.modules.ReactNativeHostWrapper;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
+// import com.netcore.android.Smartech;
+// import com.netcore.android.notification.SMTNotificationOptions;
+// import java.lang.ref.WeakReference;
+
 public class MainApplication extends Application implements ReactApplication {
+
+  // DeeplinkReceiver deeplinkReceiver = new DeeplinkReceiver();
+  // IntentFilter filter = new IntentFilter("com.smartech.EVENT_PN_INBOX_CLICK");
+
   private final ReactNativeHost mReactNativeHost = new ReactNativeHostWrapper(
     this,
     new ReactNativeHost(this) {
@@ -65,6 +75,19 @@ public class MainApplication extends Application implements ReactApplication {
 
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
     ApplicationLifecycleDispatcher.onApplicationCreate(this);
+
+    // Context context = getApplicationContext();
+    // Smartech.getInstance(new WeakReference<>(context)).initializeSdk(this);
+    // Smartech.getInstance(new WeakReference<>(context)).setDebugLevel(9);
+
+    // try {
+    //   Smartech.getInstance(new WeakReference<>(context)).fetchAlreadyGeneratedTokenFromFCM();
+    // } catch (Exception e) {
+    //   // Log.e(TAG, "Fetching FCM token failed.");
+    // }
+    // context.registerReceiver(deeplinkReceiver, filter);
+    // Intent intent = new Intent();
+    // new DeeplinkReceiver().onReceive(this, intent);
   }
 
   @Override

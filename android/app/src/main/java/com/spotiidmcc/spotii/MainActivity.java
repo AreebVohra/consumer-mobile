@@ -9,6 +9,8 @@ import com.facebook.react.ReactRootView;
 
 import expo.modules.ReactActivityDelegateWrapper;
 
+// import com.netcore.reactnative.SmartechReactNativeModule;
+
 public class MainActivity extends ReactActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +19,7 @@ public class MainActivity extends ReactActivity {
     // This is required for expo-splash-screen.
     setTheme(R.style.AppTheme);
     super.onCreate(null);
+    // SmartechReactNativeModule.init(getIntent());
   }
 
   /**

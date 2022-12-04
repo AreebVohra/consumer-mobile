@@ -51,6 +51,13 @@ allprojects {
             // Android JSC is installed from npm
             url(new File(['node', '--print', "require.resolve('jsc-android/package.json')"].execute(null, rootDir).text.trim(), '../dist'))
         }
+        maven {
+            credentials {
+                username = "spotii"
+                password = "0pZu12bY6dCpDQ3IyCnOgPCH"
+            }
+            url "https://rm.dev.uqudo.io/repository/spotii"
+        }
 
         google()
         mavenCentral {
